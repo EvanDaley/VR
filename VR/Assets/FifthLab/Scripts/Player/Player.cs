@@ -2,14 +2,15 @@
 using System.Collections;
 
 public class Player : MonoBehaviour {
-
+	
 	public GameObject spaceCursorPrefab;
 	public GameObject spaceCursor;
 	public Transform spaceCursorTransform;
+	public float rayDistance = 13f;
 
 	public Vector3 moveTarget;
 
-	public GameObject selected;
+	private GameObject selected;
 
 	private Transform _transform;
 	private CardboardHead _cardHead;
@@ -38,21 +39,60 @@ public class Player : MonoBehaviour {
 
 			// switch(decide what to do based on selection and gaze target)
 
-			//selected = GameObject.CreatePrimitive (PrimitiveType.Cube) as GameObject;
-			//selected.transform.position = spaceCursorTransform.position;
 			// create object and give it the "holo" script so it can float, rotate, and slide without crashing into things
 		
 			Ray ray = _cardHead.Gaze;
 			RaycastHit hit;
-			if(Physics.Raycast (ray,out hit,50))
+			if(Physics.Raycast (ray,out hit,rayDistance))
 			{
 				if(hit.collider.tag == "Ground")
 				{
-					moveTarget = hit.point;
-					_navMeshAgent.SetDestination (moveTarget);
+					case_Ground (hit.point);
 				}
+				else if(hit.collider.tag == "Object")
+				{
+					case_Object(hit.collider.gameObject);
+				}
+
+			}
+			else
+			{
+				// we hit nothing, we could move to that spot or bring up a menu
+				AutoMoveForward ();
+
+				//selected = GameObject.CreatePrimitive (PrimitiveType.Cube) as GameObject;
+				//selected.transform.position = spaceCursorTransform.position;
 			}
 
 		}
 	}
+
+	void case_Ground(Vector3 hitPoint)
+	{
+		SetNavmeshTarget (hitPoint);
+	}
+
+	void case_Object(GameObject hitObject)
+	{
+
+	}
+
+	void AutoMoveForward()
+	{
+		Vector3 highPoint = _cardHead.transform.position + (_cardHead.transform.forward * 20);
+
+		Ray ray = new Ray(highPoint, Vector3.down);
+		Vector3 target = PhysicsTools.GetRayHitpoint (ray);
+
+		if(target != Vector3.zero)
+			SetNavmeshTarget (target);
+	}
+
+	void SetNavmeshTarget(Vector3 target)
+	{
+		moveTarget = target;
+		_navMeshAgent.SetDestination (target);
+	}
+
+	
 }
