@@ -27,6 +27,7 @@ GameObject:
   - 4: {fileID: 438436}
   - 114: {fileID: 11470724}
   - 114: {fileID: 11443130}
+  - 195: {fileID: 19596204}
   m_Layer: 0
   m_Name: CardboardMain
   m_TagString: Untagged
@@ -406,6 +407,7 @@ MonoBehaviour:
   spaceCursorPrefab: {fileID: 189848, guid: 799229a876512dc4bb65ec3bba2071ad, type: 2}
   spaceCursor: {fileID: 0}
   spaceCursorTransform: {fileID: 0}
+  moveTarget: {x: 0, y: 0, z: 0}
   selected: {fileID: 0}
 --- !u!114 &11459574
 MonoBehaviour:
@@ -479,6 +481,26 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 163672}
   m_Enabled: 1
+--- !u!195 &19596204
+NavMeshAgent:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135862}
+  m_Enabled: 1
+  m_Radius: .5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: .800000012
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
