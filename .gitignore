@@ -24,7 +24,7 @@ sysinfo.txt
 # ===================================== #
 # Ignored Assets #
 # ===================================== #
-Standard*Assets/
+# Standard*Assets/ == not ignored this time because of the limited standard asset usage
 SkyBox*Volume*2/
 LightmapSnapshot.asset
 LightmapSnapshot.asset.meta
