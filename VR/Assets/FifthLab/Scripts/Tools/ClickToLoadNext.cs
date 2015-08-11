@@ -12,4 +12,9 @@ public class ClickToLoadNext : MonoBehaviour {
 	void Update () {
 	
 	}
+
+	public void LoadNextLevel()
+	{
+		Application.LoadLevel (Application.loadedLevel + 1);
+	}
 }
