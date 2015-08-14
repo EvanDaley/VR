@@ -53,7 +53,7 @@ public class PlayerMenu : MonoBehaviour {
 		// ignore null results
 		foreach(ICreateMenuActionItem behavior in Behaviors)
 		{
-			behavior.CompleteAction ();
+			behavior.CreateMenuItem ();
 		}
 	}
 

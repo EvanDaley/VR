@@ -10,7 +10,7 @@ using System.Collections;
   
 public interface ICreateMenuActionItem 
 {
-	//Canvas CreateMenuItem();
-	void CompleteAction();
-	//void CancelAction();
+	Canvas CreateMenuItem();
+	void BeginAction();
+	void CancelAction();
 }

@@ -19,8 +19,18 @@ public class Attack : MonoBehaviour, ICreateMenuActionItem {
 	
 	}
 
-	public void CompleteAction()
+	public Canvas CreateMenuItem()
+	{
+		return null;
+	}
+
+	public void BeginAction()
 	{
 		print ("Attack!");
+	}
+
+	public void CancelAction()
+	{
+		print ("Stop Attacking!");
 	}
 }

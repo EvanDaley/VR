@@ -18,8 +18,19 @@ public class MoveToSelected : MonoBehaviour, ICreateMenuActionItem {
 	{
 	
 	}
-	public void CompleteAction()
+
+	public Canvas CreateMenuItem()
+	{
+		return null;	
+	}
+
+	public void BeginAction()
 	{
 		print ("Walk to point.");
+	}
+
+	public void CancelAction()
+	{
+		print ("Stop Moving!");
 	}
 }

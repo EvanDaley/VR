@@ -139,8 +139,7 @@ public class GazeInputModule : BaseInputModule {
     if (!pointerData.eligibleForClick) {
       return;
     }
-    bool triggerStillDown = !Cardboard.SDK.Triggered
-        && Time.unscaledTime - pointerData.clickTime < clickTime;
+    bool triggerStillDown = !Cardboard.SDK.Triggered && Time.unscaledTime - pointerData.clickTime < clickTime;
     if (!Cardboard.SDK.TapIsTrigger) {
       // Screen touch also counts, as long as it didn't start on this frame.
       triggerStillDown |= !Input.GetMouseButtonDown(0) && Input.GetMouseButton(0);

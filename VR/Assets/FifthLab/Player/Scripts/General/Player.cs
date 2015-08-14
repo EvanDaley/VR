@@ -17,7 +17,11 @@ public class Player : MonoBehaviour {
 
 	public void Update()
 	{
-	
+		if(Cardboard.SDK.Triggered)
+		{
+
+		}
+
 	}
 
 	public void OnTriggerEnter()
