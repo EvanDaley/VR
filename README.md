@@ -6,4 +6,4 @@ Many of the included scripts are written in a generic way so that they work for 
 Items of Note: 
 1. Complex system for a dynamic world space menu generated based on components attached to character.
 2. UI occlusion of world objects using second camera.
-3. Included Oculus Rift examples developed by Oculus VR. 
+3. Included <b>Oculus Rift</b >examples developed by Oculus VR. 
