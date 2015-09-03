@@ -3,7 +3,7 @@ A workspace for testing Virtual Reality applications. Anyone may feel free to us
 
 Many of the included scripts are written in a generic way so that they work for as many Unity VR applications as possible.
 
-Items of Note: 
-1. Complex system for a dynamic world space menu generated based on components attached to character.
-2. UI occlusion of world objects using second camera.
-3. Included <b>Oculus Rift</b> examples developed by Oculus VR. 
+Items of Note: <br>
+1. Complex system for a dynamic world space menu generated based on components attached to character.<br>
+2. UI occlusion of world objects using second camera.<br>
+3. Included <b>Oculus Rift</b> examples developed by Oculus VR. <br>
