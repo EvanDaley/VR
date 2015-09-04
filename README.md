@@ -4,6 +4,10 @@ A workspace for building Oculus Rift applications. Includes examples of differen
 Many of the included scripts are written in a generic way so that they work for as many Unity VR applications as possible.
 
 Items of Note: <br>
-1. Complex system for a dynamic world space menu generated based on components attached to character.<br>
+1. Complex system for a dynamic world space menu generated based on components attached to character. [Removed] <br>
 2. UI occlusion of world objects using second camera.<br>
 3. Included <b>Oculus Rift</b> examples developed by Oculus VR. <br>
+4. Xbox controller movement (based on modular Unity Input Class). Left-Thumbstick for movement and Bumpers for camera rotation. <br><br> 
+
+OTHER ITEMS OF NOTE:
+(Nothing yet)
