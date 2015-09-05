@@ -5,9 +5,11 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/EvanDaley_Lab5/Scenes/Splash.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/EvanDaley_Lab5/Scenes/Splash2.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/EvanDaley_Lab5/Scenes/1a.unity
+  - enabled: 1
+    path: Assets/EvanDaley_Lab5/Scenes/MainMenu.unity

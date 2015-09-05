@@ -98,8 +98,6 @@ GameObject:
   - 223: {fileID: 223413821}
   - 114: {fileID: 223413820}
   - 114: {fileID: 223413819}
-  - 114: {fileID: 223413824}
-  - 114: {fileID: 223413823}
   m_Layer: 5
   m_Name: Canvas_Dual
   m_TagString: Untagged
@@ -180,28 +178,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &223413823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 223413818}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37dfaefc554940f49bd8bd973fa41893, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &223413824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 223413818}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da8e703738942e14d8c0f72a9a7e887e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &384503101
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,7 +264,7 @@ GameObject:
   - 114: {fileID: 387659620}
   - 114: {fileID: 387659619}
   m_Layer: 5
-  m_Name: Panel_Right
+  m_Name: Panel_Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -307,8 +283,8 @@ RectTransform:
   - {fileID: 1490978748}
   m_Father: {fileID: 223413822}
   m_RootOrder: 1
-  m_AnchorMin: {x: .5, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: .5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
@@ -392,7 +368,7 @@ GameObject:
   - 114: {fileID: 617323653}
   - 114: {fileID: 617323655}
   m_Layer: 5
-  m_Name: Panel_Left
+  m_Name: Panel_Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -411,8 +387,8 @@ RectTransform:
   - {fileID: 1558496663}
   m_Father: {fileID: 223413822}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: .5, y: 1}
+  m_AnchorMin: {x: 0, y: .5}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
@@ -543,7 +519,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: NON-OCULUS
+  m_Text: MULTIPLAYER
 --- !u!222 &1490978750
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -592,7 +568,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: OCULUS
+  m_Text: SOLO
 --- !u!222 &1558496662
 CanvasRenderer:
   m_ObjectHideFlags: 0
