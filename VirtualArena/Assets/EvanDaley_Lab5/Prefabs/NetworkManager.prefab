@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 488964}
   - 114: {fileID: 11493070}
+  - 114: {fileID: 11436666}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -28,6 +29,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &11436666
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 227461547, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+  showGUI: 1
+  offsetX: 0
+  offsetY: 0
 --- !u!114 &11493070
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49,7 +65,7 @@ MonoBehaviour:
   m_SendPeerInfo: 0
   m_MaxDelay: .00999999978
   m_LogLevel: 2
-  m_PlayerPrefab: {fileID: 0}
+  m_PlayerPrefab: {fileID: 141944, guid: 5a1d3d161c80b294cab08f86eb860fef, type: 2}
   m_AutoCreatePlayer: 1
   m_PlayerSpawnMethod: 0
   m_OfflineScene: 
