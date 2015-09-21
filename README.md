@@ -11,4 +11,4 @@ ITEMS OF NOTE: <br>
 4. Xbox controller movement (based on modular Unity Input Class). Left-Thumbstick for movement and Bumpers for camera rotation. <br><br> 
 
 OTHER ITEMS OF NOTE:
-(Nothing yet)
+1. The Multiplayer uses Unity's new networking (as of 9/21/15) which you need to set up with your Unity account. After downloading the project log in to your Unity account and set up the networking as a NEW PROJECT.
