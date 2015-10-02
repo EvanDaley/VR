@@ -3,7 +3,7 @@ using System.Collections;
 
 public class WeaponManager : MonoBehaviour {
 
-    public bool createWeapon = true;
+    public bool createWeapon = false;
     public GameObject defaultWeapon;
 
     private GameObject activeWeapon;
