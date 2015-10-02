@@ -19,12 +19,20 @@ public class Shotgun : MonoBehaviour {
     public float outwardForce = 1;
 
     public GameObject standardAmmo;
+    public AudioSource m_AudioSource;
+    
+    void Start()
+    {
+        m_AudioSource = GetComponent<AudioSource>();
+    }
 
     /// <summary>
     /// Blasts projectiles directly forward.
     /// </summary>
     public void Fire()
     {
+        m_AudioSource.Play();
+
         for (int i = 0; i < numberOfPellets; i++)
         {
             // Get a random point in a sphere for calculating offsets
