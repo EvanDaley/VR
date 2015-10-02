@@ -19,7 +19,7 @@ public class Targeting : MonoBehaviour {
         {
             targetPoint = hit.point;
             Target = hit.transform;
-            print(targetPoint);
+            //print(targetPoint);
         }
         else
         {
