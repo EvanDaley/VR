@@ -20,6 +20,7 @@ public class Shotgun : MonoBehaviour {
 
     public GameObject standardAmmo;
     public AudioSource m_AudioSource;
+    public GameObject particlesPrefab;
     
     void Start()
     {
@@ -32,6 +33,7 @@ public class Shotgun : MonoBehaviour {
     public void Fire()
     {
         m_AudioSource.Play();
+        GameObject particles = GameObject.Instantiate(particlesPrefab, barrelEnd.transform.position, transform.rotation) as GameObject;
 
         for (int i = 0; i < numberOfPellets; i++)
         {
