@@ -13,6 +13,9 @@ public class CustomEnemy : MonoBehaviour
 
     public int health = 100;
     public float delay = 2f;
+    public GameObject spellSpawnPoint;
+    public GameObject spell;
+    private GameObject spellInstance;
 
     // Use this for initialization
     private void Start()
@@ -25,7 +28,6 @@ public class CustomEnemy : MonoBehaviour
 
     }
 
-
     // Update is called once per frame
     private void Update()
     {
@@ -34,11 +36,10 @@ public class CustomEnemy : MonoBehaviour
             // die
         }
 
-        if (Time.time > delay)
+        if (Time.time > delay && spellInstance == null)
         {
-            Invoke("FinishThrow", 0.8F);
             animator.SetBool("ThrowSpellUp", true);
-            delay = Time.time + 1F;
+            Invoke("FinishThrow", .5F);
         }
     }
 
@@ -47,4 +48,19 @@ public class CustomEnemy : MonoBehaviour
         animator.SetBool("ThrowSpellUp", false);
     }
 
+    public void VolleyUpStart()
+    {
+        print("Start");
+
+        spellInstance = GameObject.Instantiate(spell, spellSpawnPoint.transform.position, Quaternion.identity) as GameObject;
+        spellInstance.transform.SetParent(spellSpawnPoint.transform);
+    }
+
+    public void VolleyUpEnd()
+    {
+        print("End");
+
+        //if (spellInstance)
+        //    Destroy(spellInstance);
+    }
 }

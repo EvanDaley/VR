@@ -465,6 +465,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &144520
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 452358}
+  m_Layer: 9
+  m_Name: SpellSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &145876
 GameObject:
   m_ObjectHideFlags: 1
@@ -494,6 +509,7 @@ GameObject:
   - 195: {fileID: 19584942}
   - 114: {fileID: 11468222}
   - 114: {fileID: 11440910}
+  - 114: {fileID: 11411202}
   m_Layer: 9
   m_Name: Cyborg
   m_TagString: Character
@@ -902,7 +918,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 146436}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -.707106829, z: 0, w: .707106709}
   m_LocalPosition: {x: 16.4283829, y: 0, z: -36.0680847}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -925,6 +941,7 @@ Transform:
   - {fileID: 449424}
   - {fileID: 465056}
   - {fileID: 493278}
+  - {fileID: 452358}
   m_Father: {fileID: 420426}
   m_RootOrder: 0
 --- !u!4 &408948
@@ -1275,6 +1292,18 @@ Transform:
   - {fileID: 436638}
   m_Father: {fileID: 403734}
   m_RootOrder: 0
+--- !u!4 &452358
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 144520}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.0900000036, y: .129999995, z: .0399999991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 408898}
+  m_RootOrder: 5
 --- !u!4 &453450
 Transform:
   m_ObjectHideFlags: 1
@@ -1578,6 +1607,22 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11411202
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c442bb212b541684ea5178c9671300e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  health: 100
+  delay: .5
+  spellSpawnPoint: {fileID: 144520}
+  spell: {fileID: 147400, guid: 525da98df7cf90b468d6c4d24c8d113b, type: 2}
 --- !u!114 &11440910
 MonoBehaviour:
   m_ObjectHideFlags: 1

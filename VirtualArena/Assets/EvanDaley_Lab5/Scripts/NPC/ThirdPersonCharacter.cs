@@ -102,18 +102,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 		void PreventStandingInLowHeadroom()
 		{
-            return;
-			// prevent standing up in crouch-only zones
-			if (!m_Crouching)
-			{
-				Ray crouchRay = new Ray(m_Rigidbody.position + Vector3.up * m_Capsule.radius * k_Half, Vector3.up);
-				float crouchRayLength = m_CapsuleHeight - m_Capsule.radius * k_Half;
-				if (Physics.SphereCast(crouchRay, m_Capsule.radius * k_Half, crouchRayLength))
-				{
-					m_Crouching = true;
-				}
-			}
-		}
+            m_Crouching = false;
+        }
 
 
 		void UpdateAnimator(Vector3 move)
