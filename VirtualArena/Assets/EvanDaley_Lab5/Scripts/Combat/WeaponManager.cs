@@ -8,6 +8,7 @@ public class WeaponManager : MonoBehaviour {
 
     private GameObject activeWeapon;
     public Shotgun weapon;
+    public WeaponForm weaponForm;
 
 	// Use this for initialization
 	void Start () {
