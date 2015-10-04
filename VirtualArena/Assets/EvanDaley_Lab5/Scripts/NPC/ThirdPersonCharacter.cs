@@ -102,6 +102,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 		void PreventStandingInLowHeadroom()
 		{
+            return;
 			// prevent standing up in crouch-only zones
 			if (!m_Crouching)
 			{

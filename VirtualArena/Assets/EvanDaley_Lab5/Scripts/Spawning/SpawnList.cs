@@ -13,8 +13,6 @@ public class SpawnList : MonoBehaviour {
     void Awake()
     {
         Instance = this;
-
-        Invoke("GetSpawnPointI", 1f);
     }
 
     public void Subscribe(SpawnLocation location)
@@ -22,15 +20,11 @@ public class SpawnList : MonoBehaviour {
         locations.Add(location);
     }
 
-    public void GetSpawnPointI()
-    {
-        GetSpawnPoint((Team)1);
-    }
-
     public void GetSpawnPoint(Team team)
     {
         int randomStart = Random.Range(0, locations.Count - 1);
 
         print("locations.Count: " + locations.Count);
+        print("trying to grab spawnpoint from incomplete method GetSpawnPoint");
     }
 }
