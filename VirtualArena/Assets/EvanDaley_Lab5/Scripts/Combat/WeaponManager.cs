@@ -24,7 +24,6 @@ public class WeaponManager : MonoBehaviour {
         {
             if (weapon != null)
             {
-                print("here");
                 weapon.Fire();
             }
             else
