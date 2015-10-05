@@ -12,11 +12,15 @@ public class FreeThyself : MonoBehaviour {
 
     float prevY = 0;
     bool hasReachedApex = false;
+    private GameObject player;
+    public float moveSpeed;
 
 	// Use this for initialization
 	void Start () {
         root = transform.root;
         rbody = GetComponent<Rigidbody>();
+
+        player = GameObject.FindWithTag("Player");
     }
 	
 	// Update is called once per frame
@@ -42,8 +46,9 @@ public class FreeThyself : MonoBehaviour {
             // expand
             float newScale = transform.localScale.x + (scaleSpeed * Time.deltaTime);
             transform.localScale = new Vector3(newScale, newScale, newScale);
-        }
 
+            //transform.position = Vector3.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
+        }
         
     }
 

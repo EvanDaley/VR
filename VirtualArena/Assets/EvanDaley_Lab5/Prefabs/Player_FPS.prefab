@@ -1002,7 +1002,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 102686}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -1697,6 +1697,7 @@ MonoBehaviour:
   createWeapon: 0
   defaultWeapon: {fileID: 0}
   weapon: {fileID: 11430900}
+  weaponForm: {fileID: 0}
 --- !u!114 &11430900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1847,6 +1848,7 @@ MonoBehaviour:
   createWeapon: 0
   defaultWeapon: {fileID: 167782}
   weapon: {fileID: 11470942}
+  weaponForm: {fileID: 0}
 --- !u!114 &11439204
 MonoBehaviour:
   m_ObjectHideFlags: 1

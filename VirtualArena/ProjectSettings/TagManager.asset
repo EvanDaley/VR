@@ -7,6 +7,7 @@ TagManager:
   - VRController
   - Dynamic
   - Character
+  - Player
   layers:
   - Default
   - TransparentFX
