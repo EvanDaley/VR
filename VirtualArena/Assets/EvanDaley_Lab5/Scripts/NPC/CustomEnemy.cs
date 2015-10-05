@@ -60,7 +60,9 @@ public class CustomEnemy : MonoBehaviour
     {
         print("End");
 
-        //if (spellInstance)
-        //    Destroy(spellInstance);
+       // if (spellInstance)
+       //     spellInstance = null;
+
+        delay = Time.time + .1f;
     }
 }

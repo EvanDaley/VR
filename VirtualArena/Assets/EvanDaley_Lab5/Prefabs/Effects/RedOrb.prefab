@@ -65,12 +65,12 @@ GameObject:
   - 23: {fileID: 2356566}
   - 114: {fileID: 11458948}
   m_Layer: 2
-  m_Name: Red
+  m_Name: Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &442276
 Transform:
   m_ObjectHideFlags: 1
@@ -103,7 +103,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 155580}
-  m_LocalRotation: {x: 0, y: .642787695, z: 0, w: .766044378}
+  m_LocalRotation: {x: .540227175, y: .455731362, z: -.453304499, w: .543119371}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
@@ -191,7 +191,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 147400}
   serializedVersion: 2
-  m_Mass: 20
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 0
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9d37a739eba0dd45916e36cbd0668ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 25
+  lifeTime: 5
 --- !u!114 &11449820
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -226,8 +226,8 @@ MonoBehaviour:
     value: {x: 0, y: 0, z: 0}
     space: 1
   rotateDegreesPerSecond:
-    value: {x: 90, y: 0, z: 0}
-    space: 0
+    value: {x: 180, y: 0, z: 0}
+    space: 1
   ignoreTimescale: 0
 --- !u!114 &11453316
 MonoBehaviour:
@@ -241,6 +241,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minY: 2.0999999
+  upwardForce: 320
+  scaleSpeed: .5
 --- !u!114 &11458948
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -256,8 +258,8 @@ MonoBehaviour:
     value: {x: 0, y: 0, z: 0}
     space: 1
   rotateDegreesPerSecond:
-    value: {x: 45, y: 0, z: 0}
-    space: 0
+    value: {x: 95, y: 0, z: 0}
+    space: 1
   ignoreTimescale: 0
 --- !u!135 &13506520
 SphereCollider:
@@ -304,15 +306,31 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Mass
-      value: 20
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: lifeTime
-      value: 25
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: upwardForce
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.x
+      value: .0500000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.y
+      value: .0500000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.z
+      value: .0500000007
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
