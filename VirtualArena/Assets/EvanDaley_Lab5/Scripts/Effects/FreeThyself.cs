@@ -25,6 +25,9 @@ public class FreeThyself : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (root == null)
+            return;
+
         if (transform.position.y > (root.position.y + minY) && free == false)
             BreakFree();
 

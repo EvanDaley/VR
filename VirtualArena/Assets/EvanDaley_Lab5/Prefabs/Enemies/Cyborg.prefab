@@ -510,6 +510,7 @@ GameObject:
   - 114: {fileID: 11468222}
   - 114: {fileID: 11440910}
   - 114: {fileID: 11411202}
+  - 114: {fileID: 11416378}
   m_Layer: 9
   m_Name: Cyborg
   m_TagString: Character
@@ -919,7 +920,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 146436}
   m_LocalRotation: {x: 0, y: -.707106829, z: 0, w: .707106709}
-  m_LocalPosition: {x: 16.4283829, y: 0, z: -36.0680847}
+  m_LocalPosition: {x: 16.4300003, y: 0, z: -43.5309982}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 488456}
@@ -1619,10 +1620,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  health: 100
   delay: .5
   spellSpawnPoint: {fileID: 144520}
   spell: {fileID: 147400, guid: 525da98df7cf90b468d6c4d24c8d113b, type: 2}
+--- !u!114 &11416378
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e0fb5693b601b24086edaab91377aaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!114 &11440910
 MonoBehaviour:
   m_ObjectHideFlags: 1

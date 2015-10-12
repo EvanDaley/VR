@@ -11,11 +11,25 @@ public class CustomEnemy : MonoBehaviour
     private AICharacterControl control;
     private Animator animator;
 
-    public int health = 100;
     public float delay = 2f;
     public GameObject spellSpawnPoint;
     public GameObject spell;
     private GameObject spellInstance;
+
+    private Health m_Health;
+
+    public int Health
+    {
+        get
+        {
+            if(m_Health == null)
+            {
+                m_Health = GetComponent<Health>();
+            }
+
+            return m_Health.health;
+        }
+    }
 
     // Use this for initialization
     private void Start()
@@ -31,12 +45,11 @@ public class CustomEnemy : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if(health < 0)
+        if(Health < 0)
         {
             // die
         }
-
-        if (Time.time > delay && spellInstance == null)
+        else if (Time.time > delay && spellInstance == null)
         {
             animator.SetBool("ThrowSpellUp", true);
             Invoke("FinishThrow", .5F);
@@ -64,5 +77,10 @@ public class CustomEnemy : MonoBehaviour
        //     spellInstance = null;
 
         delay = Time.time + .1f;
+    }
+
+    public void Die()
+    {
+        Destroy(gameObject);
     }
 }
