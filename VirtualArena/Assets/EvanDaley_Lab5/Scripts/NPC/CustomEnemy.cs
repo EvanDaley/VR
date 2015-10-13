@@ -81,6 +81,6 @@ public class CustomEnemy : MonoBehaviour
 
     public void Die()
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 }

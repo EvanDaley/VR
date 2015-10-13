@@ -4,6 +4,7 @@ using System.Collections;
 public class Health : MonoBehaviour {
 
     public int health = 100;
+    public bool debug = false;
 
     public void Damage(int amount)
     {
@@ -13,5 +14,8 @@ public class Health : MonoBehaviour {
         {
             BroadcastMessage("Die");
         }
+
+        if (debug)
+            print(gameObject.name + ": " + health);
     }
 }

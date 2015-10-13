@@ -50,8 +50,18 @@ public class FreeThyself : MonoBehaviour {
             float newScale = transform.localScale.x + (scaleSpeed * Time.deltaTime);
             transform.localScale = new Vector3(newScale, newScale, newScale);
 
-            //transform.position = Vector3.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
         }
+        
+    }
+
+    void OnTriggerEnter()
+    {
+        if (hasReachedApex)
+        {
+            BroadcastMessage("Die");
+        }
+
         
     }
 

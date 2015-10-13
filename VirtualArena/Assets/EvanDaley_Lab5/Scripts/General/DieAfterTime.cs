@@ -3,6 +3,7 @@ using System.Collections;
 
 public class DieAfterTime : MonoBehaviour {
 
+    public GameObject explosion;
     float deathTime = 1000f;
     public float lifeTime = 3f;
 
@@ -14,6 +15,14 @@ public class DieAfterTime : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (Time.time > deathTime)
-            Destroy(this.gameObject);
+            Die();
 	}
+
+    void Die()
+    {
+        if (explosion != null)
+            GameObject.Instantiate(explosion, transform.position, transform.rotation);
+
+        Destroy(gameObject);
+    }
 }
