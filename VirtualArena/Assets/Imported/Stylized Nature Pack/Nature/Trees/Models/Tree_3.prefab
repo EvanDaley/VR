@@ -40,7 +40,7 @@ Material:
   m_Shader: {fileID: 10604, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2000
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
@@ -98,7 +98,7 @@ Material:
   m_Shader: {fileID: 10605, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2000
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
@@ -108,13 +108,6 @@ Material:
           name: _MainTex
         second:
           m_Texture: {fileID: 2800000, guid: cf46bef58a94b2f43afbf2330842e5bb, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _ShadowTex
-        second:
-          m_Texture: {fileID: 2800000, guid: 8aeece6aa091e0847928ff56fa0ae48b, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -129,6 +122,13 @@ Material:
           name: _BumpSpecMap
         second:
           m_Texture: {fileID: 2800000, guid: 69f2348d5c4472f4fa531565943b3b43, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ShadowTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 8aeece6aa091e0847928ff56fa0ae48b, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -350,7 +350,7 @@ MonoBehaviour:
   m_Name: Tree Data
   m_EditorClassIdentifier: 
   _uniqueID: 12742
-  materialHash: 666a9777c6f39d7c147e10c803484f9b-550813696
+  materialHash: 36ea8d605abfa24f0f54e16db2a326f4-550813696
   root:
     _uniqueID: 1
     seed: 834568
