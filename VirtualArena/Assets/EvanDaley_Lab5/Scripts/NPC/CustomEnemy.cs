@@ -40,6 +40,7 @@ public class CustomEnemy : MonoBehaviour
         control = GetComponent<AICharacterControl>();
         animator = GetComponent<Animator>();
 
+        ActorList.Instance.Subscribe(gameObject);
     }
 
     // Update is called once per frame

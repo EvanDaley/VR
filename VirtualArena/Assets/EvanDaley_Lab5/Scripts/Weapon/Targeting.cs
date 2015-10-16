@@ -6,9 +6,14 @@ public class Targeting : MonoBehaviour {
     // The current target we are looking at
     private Transform targetTransform;
     private Vector3 targetPoint;
+
+    // The ray that fires forward from the camera
     private Ray ray;
+
+    // The raycast hit
     private RaycastHit hit;
 
+    // The distance the last hit object was from the camera
     [HideInInspector]
     public float recentDistance = 15f;
     
@@ -24,6 +29,7 @@ public class Targeting : MonoBehaviour {
         else
         {
             targetTransform = null;
+            targetPoint = Camera.main.transform.forward * recentDistance;
         }
 	}
 
@@ -43,7 +49,7 @@ public class Targeting : MonoBehaviour {
         set
         {
             // Only check distance when we are hitting a new target
-            if(value != targetTransform)
+            if(value != targetTransform && value != null)
             {
                 recentDistance = Vector3.Distance(RayHitPoint, Camera.main.transform.position);
             }

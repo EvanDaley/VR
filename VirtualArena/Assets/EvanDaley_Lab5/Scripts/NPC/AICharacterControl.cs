@@ -26,11 +26,18 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         // Update is called once per frame
         private void Update()
         {
+            if(target == null)
+            {
+                // Find the player if we don't have a reference to it
+                GameObject t = GameObject.FindWithTag("Player");
+
+                if (t != null)
+                    target = t.transform;
+            }
+
             if (target != null)
             {
                 agent.SetDestination(target.position);
-
-				
 				
                 // use the values to move the character
                 character.Move(agent.desiredVelocity, false, false);

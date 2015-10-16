@@ -104,6 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 0}
   lifeTime: 1.10000002
+  destructionScore: 0
 --- !u!114 &11498408
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -115,8 +116,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ae4663a12b611849aa580e6bc8ed57a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
-  range: 8
+  damage: 7
+  range: 2
 --- !u!198 &19803910
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -3283,11 +3284,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: damage
-      value: 1
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: range
-      value: 8
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: lifeTime

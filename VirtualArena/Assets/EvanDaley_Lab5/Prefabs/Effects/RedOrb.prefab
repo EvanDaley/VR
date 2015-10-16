@@ -44,6 +44,7 @@ GameObject:
   - 114: {fileID: 11453316}
   - 54: {fileID: 5452880}
   - 135: {fileID: 13582710}
+  - 114: {fileID: 11499532}
   m_Layer: 0
   m_Name: RedOrb
   m_TagString: Untagged
@@ -369,6 +370,19 @@ MonoBehaviour:
     value: {x: 95, y: 0, z: 0}
     space: 1
   ignoreTimescale: 0
+--- !u!114 &11499532
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e0fb5693b601b24086edaab91377aaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
+  debug: 0
 --- !u!135 &13506520
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -2586,6 +2600,10 @@ Prefab:
       objectReference: {fileID: 178344, guid: 4fe3b8a3317b9af409533f16131c0db9, type: 2}
     - target: {fileID: 0}
       propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: health
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
