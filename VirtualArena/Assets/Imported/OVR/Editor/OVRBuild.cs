@@ -19,42 +19,24 @@ limitations under the License.
 
 ************************************************************************************/
 
-#define DEBUG
-
-using System;
-using System.Diagnostics;
-using System.Runtime.InteropServices;
 using UnityEngine;
+using UnityEditor;
 
 /// <summary>
-/// Helper class with debug assertions.
+/// Allows Oculus to build apps from the command line.
 /// </summary>
-public static class OVRDebugUtils
+partial class OculusBuildApp
 {
-	/// <summary>
-	/// Throws an exception if the condition is false and prints the
-	/// the stack for the calling function.
-	/// </summary>
-    [Conditional("DEBUG")]
-    public static void Assert(bool condition, string exprTag)
+    static void SetAndroidTarget()
     {
-        if (!condition)
-		{
-			StackTrace st = new StackTrace(new StackFrame(true));
-			StackFrame sf = st.GetFrame(1);
-			throw new Exception("Assertion( " + exprTag + " ): File '" + sf.GetFileName() + "', Line " + sf.GetFileLineNumber() + ".");
-		}
+#if UNITY_5
+		EditorUserBuildSettings.androidBuildSubtarget = MobileTextureSubtarget.ASTC;
+#else
+		EditorUserBuildSettings.androidBuildSubtarget = AndroidBuildSubtarget.ETC2;
+#endif
+	if (EditorUserBuildSettings.activeBuildTarget != BuildTarget.Android)
+        {
+            EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTarget.Android);
+        }
     }
-
-	[Conditional("DEBUG")]
-	public static void Assert(bool condition)
-	{
-		if (!condition)
-		{
-			StackTrace st = new StackTrace(new StackFrame(true));
-			StackFrame sf = st.GetFrame(1);
-			UnityEngine.Debug.LogError("Assertion( " + sf.ToString() + " ): File '" + sf.GetFileName() + "', Line " + sf.GetFileLineNumber() + ".");
-			throw new Exception();
-		}
-	}
-};
+}
