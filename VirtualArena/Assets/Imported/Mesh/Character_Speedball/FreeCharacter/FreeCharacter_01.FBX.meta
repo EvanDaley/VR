@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 7d3425a6c7317e048be11c2ff72db69e
+timeCreated: 1445925906
+licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
@@ -113,8 +115,11 @@ ModelImporter:
     400104: Bip001 Spine2
     400106: Body_01
     400108: //RootNode
+    2300000: Body_01
+    3300000: Body_01
     4300000: Body_01
     9500000: //RootNode
+    11100000: Body_01
     13700000: Body_01
   materials:
     importMaterials: 1
@@ -125,7 +130,13 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
-    animationImportErrors: 
+    animationImportErrors: '
+
+      Imported file ''FreeCharacter_01'' conversion failed: Required human bone ''Hips''
+      not found
+
+
+'
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0

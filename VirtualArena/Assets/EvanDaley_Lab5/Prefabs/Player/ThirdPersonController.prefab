@@ -101,8 +101,7 @@ GameObject:
   - 95: {fileID: 9511208}
   - 54: {fileID: 5473040}
   - 136: {fileID: 13646862}
-  - 114: {fileID: 11443032}
-  - 114: {fileID: 11402230}
+  - 114: {fileID: 11420740}
   - 114: {fileID: 11418748}
   m_Layer: 0
   m_Name: ThirdPersonController
@@ -1606,25 +1605,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11402230
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce7a80d520cacc042b5fe14f373d8173, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MovingTurnSpeed: 360
-  m_StationaryTurnSpeed: 180
-  m_JumpPower: 6
-  m_GravityMultiplier: 1.5
-  m_RunCycleLegOffset: .200000003
-  m_MoveSpeedMultiplier: 1
-  m_AnimSpeedMultiplier: 1
-  m_GroundCheckDistance: .300000012
 --- !u!114 &11418748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1638,13 +1618,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MovingTurnSpeed: 360
   m_StationaryTurnSpeed: 180
-  m_JumpPower: 12
-  m_GravityMultiplier: 2
+  m_JumpPower: 6
+  m_GravityMultiplier: 1.5
   m_RunCycleLegOffset: .200000003
   m_MoveSpeedMultiplier: 1
   m_AnimSpeedMultiplier: 1
-  m_GroundCheckDistance: .100000001
---- !u!114 &11443032
+  m_GroundCheckDistance: .300000012
+--- !u!114 &11420740
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1652,7 +1632,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 114578}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 521b611700410be45810047f0a74e899, type: 3}
+  m_Script: {fileID: 11500000, guid: 19ce5fe05a011f74eb9fd513a31c9ea4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!136 &13646862
