@@ -19,11 +19,8 @@ public class RightHand : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//m_Anim.SetBool(animParm, false);
-
-		if(Input.GetButtonDown("Fire2"))
+		if(Input.GetButtonDown("Fire2") || (Input.GetAxis("RightTrigger") > .5F))
 		{
-			//m_Anim.SetBool(animParm, true);
 			m_Anim.Play(animParm);
 		}
 	}

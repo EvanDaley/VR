@@ -33,7 +33,7 @@ public class SyncMovementUser : MonoBehaviour {
 	{
 		if (!m_Jump)
 		{
-			m_Jump = Input.GetButtonDown("Jump");
+			m_Jump = Input.GetButtonDown("Jump") || Input.GetButtonDown ("Button A");
 		}
 	}
 	
@@ -44,7 +44,7 @@ public class SyncMovementUser : MonoBehaviour {
 		// read inputs
 		float h = Input.GetAxis("Horizontal");
 		float v = Input.GetAxis("Vertical");
-		bool crouch = Input.GetKey(KeyCode.C);
+		bool crouch = Input.GetKey(KeyCode.C) || Input.GetButton("Button B");
 		
 		// calculate move direction to pass to character
 		if (m_Cam != null)

@@ -72,9 +72,16 @@ namespace UnityStandardAssets.Cameras
 			if(Time.timeScale < float.Epsilon)
 			return;
 
-            // Read the user input
-            var x = CrossPlatformInputManager.GetAxis("Mouse X");
-            var y = CrossPlatformInputManager.GetAxis("Mouse Y");
+			var x = Input.GetAxis("Right_X_Axis");
+			var y = Input.GetAxis("Right_Y_Axis");
+
+			// If the xbox input is within the deadzone use the mouse input
+			if(x < .2 && x > -.2 && y < .15 && y > -.15)
+			{
+	            // Read the user input
+	            x = CrossPlatformInputManager.GetAxis("Mouse X");
+	            y = CrossPlatformInputManager.GetAxis("Mouse Y");
+			}
 
             // Adjust the look angle by an amount proportional to the turn speed and horizontal input.
             m_LookAngle += x*m_TurnSpeed;
