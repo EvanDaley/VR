@@ -105,7 +105,6 @@ GameObject:
   - 114: {fileID: 11418748}
   - 114: {fileID: 11424894}
   - 114: {fileID: 11441520}
-  - 114: {fileID: 11495426}
   m_Layer: 0
   m_Name: Main
   m_TagString: Player
@@ -1887,18 +1886,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   handPosition: 
---- !u!114 &11495426
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d155b9771cde19345bebd37cdfd9abfe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animParm: Beam1
 --- !u!136 &13646862
 CapsuleCollider:
   m_ObjectHideFlags: 1
