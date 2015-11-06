@@ -19,6 +19,16 @@ public class PlayerSpawner : MonoBehaviour {
 		}
 	}
 
+	void OnFailedToConnectToPhoton()
+	{
+		PhotonNetwork.offlineMode = true;
+	}
+
+	void OnDisconnectedFromPhoton()
+	{
+		// disconnected
+	}
+
 	void OnConnectedToMaster()
 	{
 		JoinOrCreateRoom();

@@ -35,4 +35,8 @@ MonoBehaviour:
   - PunRespawn
   - RequestForPickupTimes
   - TaggedPlayer
+  - Lower
+  - Raise
+  - PowerOff
+  - PowerOn
   DisableAutoOpenWizard: 1
