@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityStandardAssets.Cameras;
+using UnityStandardAssets.Utility;
 
 public class PlayerSpawner : MonoBehaviour {
 
@@ -54,10 +55,10 @@ public class PlayerSpawner : MonoBehaviour {
 		// create the player
 		GameObject player = PhotonNetwork.Instantiate(playerPrefab,transform.position,transform.rotation,0);
 
-		// create the camera and make it target the new player
+		// create the camera (only locally) and make it target the new player
 		GameObject newCam = GameObject.Instantiate (cameraPrefab,transform.position,transform.rotation) as GameObject;
-		FreeLookCam m_cam = newCam.GetComponent<FreeLookCam>();
-		m_cam.SetTarget(player.transform);
+		FollowTarget m_cam = newCam.GetComponentInChildren<FollowTarget>();
+		m_cam.target = player.transform;
 
 		// deactivate original camera
 		cam.SetActive (false);

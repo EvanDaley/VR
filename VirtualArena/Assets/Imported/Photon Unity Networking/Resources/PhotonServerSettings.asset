@@ -39,4 +39,11 @@ MonoBehaviour:
   - Raise
   - PowerOff
   - PowerOn
+  - SetTeam
+  - AddObject
+  - SetHand
+  - CreateSpell
+  - Cast
+  - CreateSpellWithID
+  - Initialize
   DisableAutoOpenWizard: 1

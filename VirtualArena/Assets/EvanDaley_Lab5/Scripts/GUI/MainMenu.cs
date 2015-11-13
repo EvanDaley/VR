@@ -7,6 +7,7 @@
 
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour {
 	
@@ -28,6 +29,51 @@ public class MainMenu : MonoBehaviour {
 	{
 		print ("Modify database");
 		Application.LoadLevel ("ModifyDB");
+	}
+
+	public void ButtonPressed_ResetButton()
+	{
+		GameObject buttonObject = GameObject.Find ("Button_Confirm");
+		Text button = buttonObject.GetComponentInChildren<Text>();
+		
+		button.text = "CONFIRM NAME";
+		
+	}
+
+	public void ButtonPressed_LoadCharacter()
+	{
+		// Get users text
+		GameObject inputObject = GameObject.Find("InputField");
+		InputField inputField = inputObject.GetComponent<InputField>();
+		string name = inputField.text;
+		print ("Name: " + name);
+
+		// Find save
+		Character player = SaveLoad.FindCharacter(name);
+
+		// If save found, load right away
+		if(player != null)
+		{
+			print ("Found character! Loading");
+
+			GameStateManager.Instance.player = player;
+
+			Application.LoadLevel (Application.loadedLevel + 1);
+
+			return;
+		}
+
+		// If no save found, prompt to create new 
+		GameObject buttonObject = GameObject.Find ("Button_Confirm");
+		Text button = buttonObject.GetComponentInChildren<Text>();
+
+		if(button.text == "NEW CHARACTER?")
+		{
+			// Create new
+			print ("Creating new character");
+		}
+
+		button.text = "NEW CHARACTER?";
 	}
 
 	public void ButtonPressed_Options()

@@ -6,8 +6,6 @@ TagManager:
   tags:
   - VRController
   - Dynamic
-  - Character
-  - Fire
   layers:
   - Default
   - TransparentFX
