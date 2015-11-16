@@ -1,0 +1,138 @@
+Initialize engine version: 5.2.2f1 (3757309da7e7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 460M    (ID=0xdd1)
+    Vendor:   NVIDIA
+    VRAM:     1485 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.104 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+Initialize engine version: 5.2.2f1 (3757309da7e7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 460M    (ID=0xdd1)
+    Vendor:   NVIDIA
+    VRAM:     1485 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.111 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\System.dll (this message is harmless)
+Creating Spell with DNA: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Update m_PhotonView
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: ac -> priority: 1 
+  Thread -> id: 29b4 -> priority: 1 
+<RI> Initialized touch support.
+Cannot send messages when not connected. Either connect to Photon OR use offline mode!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Cannot send messages when not connected. Either connect to Photon OR use offline mode!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Cannot send messages when not connected. Either connect to Photon OR use offline mode!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Creating Spell with DNA: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\2_Data\Managed\System.dll (this message is harmless)
+Creating Spell with DNA: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Update m_PhotonView
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 530 -> priority: 1 
+  Thread -> id: 2b3c -> priority: 1 
+Cannot send messages when not connected. Either connect to Photon OR use offline mode!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Cannot send messages when not connected. Either connect to Photon OR use offline mode!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Cannot send messages when not connected. Either connect to Photon OR use offline mode!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+(-11.0, 0.5, -5.5)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Creating Spell with DNA: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Creating Spell with DNA: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Creating Spell with DNA: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+(-11.4, 0.5, -1.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+(-11.4, 0.5, -1.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+

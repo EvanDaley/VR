@@ -6,9 +6,15 @@ using System;
 public class Spell : MonoBehaviour {
 
 	private bool canFire = false;
-	private PhotonView m_PhotonView;
 	private string spellDNA;
+
+	private PhotonView m_PhotonView;
 	private Transform m_Transform;
+	private Targeting m_Targeting;
+
+	public GameObject targetingIndicatorPrefab;
+	private GameObject targetingIndicatorInstance;
+	public GameObject attackPrefab;
 
 	void Awake () {
 		m_Transform = GetComponent<Transform>();
@@ -42,9 +48,22 @@ public class Spell : MonoBehaviour {
 
 
 		PhotonView parentView = PhotonView.Find (callerID);
-		m_Transform.SetParent (parentView.transform);
+
+		if (parentView) 
+		{
+			m_Transform.SetParent (parentView.transform);
+			m_Targeting = m_Transform.root.GetComponent<Targeting> ();
+			m_Transform.position = parentView.transform.position;
+
+			if(m_Targeting)
+			{
+				targetingIndicatorInstance = GameObject.Instantiate (targetingIndicatorPrefab, m_Transform.position, m_Transform.rotation) as GameObject;
+				print ("Initialize indicator");
+			}
+		}
 
 		canFire = true;
+
 
 	}
 	
@@ -55,13 +74,26 @@ public class Spell : MonoBehaviour {
 
 		if(m_PhotonView.isMine || !PhotonNetwork.connected)
 		{
-			// check input
-			if(Input.GetButtonDown("Fire1"))
+			if (targetingIndicatorInstance)
 			{
-				// create spell on all clients using an rpc
+				if(m_Targeting)
+				{
+					targetingIndicatorInstance.transform.position = m_Targeting.TargetPoint;
 
-				// try creating a spell with position and rotation
-				m_PhotonView.RPC ("Cast",PhotonTargets.All,new object[]{transform.position, transform.rotation});
+					// check input
+					if(Input.GetButtonDown("Fire1"))
+					{
+						// create spell on all clients using an rpc
+						
+						// try creating a spell with position and rotation
+						m_PhotonView.RPC ("Cast",PhotonTargets.All,new object[]{transform.position, transform.rotation});
+					}
+				}
+				else
+				{
+					print ("Destroy");
+					Destroy (targetingIndicatorInstance);
+				}
 			}
 		}
 	}
@@ -70,10 +102,12 @@ public class Spell : MonoBehaviour {
 	[PunRPC]
 	void Cast(Vector3 position, Quaternion rotation)
 	{
+		GameObject explosion = null;
 		// get target vector
-
+		if(attackPrefab != null)
+			explosion = GameObject.Instantiate (attackPrefab, m_Targeting.TargetPoint, Quaternion.identity) as GameObject;
 
 		//transform.root.transform.position = position;
-		print (position);
+		//print (position);
 	}
 }

@@ -49,7 +49,7 @@ public class InstanceTracker : Singleton<InstanceTracker> {
 		{
 			if(curTarget != null)
 			{
-				if(curTarget != me)
+				if(curTarget.ID != me.ID)
 				{
 					curDistance = Vector3.Distance (me.transform.position, curTarget.transform.position);
 

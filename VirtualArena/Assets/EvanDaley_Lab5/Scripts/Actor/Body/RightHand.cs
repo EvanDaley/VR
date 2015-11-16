@@ -3,6 +3,7 @@ using System.Collections;
 
 public class RightHand : MonoBehaviour {
 
+	public bool isRealPlayer = false;
 	public string[] spellList;
 	private GameObject activeSpell;
 	private string spellDNA;
@@ -15,11 +16,14 @@ public class RightHand : MonoBehaviour {
 	{
 		m_Transform = GetComponent<Transform>();
 		m_PhotonView = GetComponent<PhotonView>();
-		SpellIndex = 1;
+		SpellIndex = 0;
 	}
 
 	void Update()
 	{
+		if (!isRealPlayer)
+			return;
+
 		if(m_PhotonView.isMine || (m_PhotonView.isSceneView && PhotonNetwork.isMasterClient) || PhotonNetwork.offlineMode || !PhotonNetwork.connected)
 		{
 				 if(Input.GetKeyDown (KeyCode.Alpha1))	SpellIndex = 0;
@@ -44,7 +48,7 @@ public class RightHand : MonoBehaviour {
 				spellDNA = spellList[value];
 				print ("Creating Spell with DNA: " + spellDNA);
 				
-				if(m_PhotonView.isMine)
+				if(m_PhotonView.isMine || m_PhotonView.isSceneView)
 					CreateSpell ();
 			}
 		}

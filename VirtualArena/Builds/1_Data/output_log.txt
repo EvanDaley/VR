@@ -1,0 +1,163 @@
+Initialize engine version: 5.2.2f1 (3757309da7e7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 460M    (ID=0xdd1)
+    Vendor:   NVIDIA
+    VRAM:     1485 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\1_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\1_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\1_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\1_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\1_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.119 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Evan\Documents\GitHub\VR\VirtualArena\Builds\1_Data\Managed\System.dll (this message is harmless)
+Creating Spell with DNA: Red
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Update m_PhotonView
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 23fc -> priority: 1 
+  Thread -> id: 2334 -> priority: 1 
+Creating Spell with DNA: Red
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Creating Spell with DNA: Red
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+(-10.9, 0.5, -0.8)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+(-20.3, 0.5, -3.6)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+(-15.3, 0.5, 4.7)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+(-14.6, 0.5, 16.8)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Creating Spell with DNA: Red
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Creating Spell with DNA: Green
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Creating Spell with DNA: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Creating Spell with DNA: Red
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Creating Spell with DNA: Green
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+(-18.6, 0.5, 9.6)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+(-8.8, 0.5, 12.6)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+(-24.7, 0.5, 23.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+(-17.8, 0.5, 16.7)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+(-21.2, 0.5, 19.1)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Creating Spell with DNA: Red
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+(-12.3, 0.5, 10.9)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+(-14.6, 0.5, 15.3)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+(-12.3, 0.5, 5.9)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Creating Spell with DNA: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Creating Spell with DNA: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Creating Spell with DNA: Red
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Creating Spell with DNA: Red
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Creating Spell with DNA: Green
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Creating Spell with DNA: Green
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Creating Spell with DNA: Red
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+(-8.6, 0.5, -4.7)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+(-5.3, 0.5, -8.2)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Creating Spell with DNA: Red
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+

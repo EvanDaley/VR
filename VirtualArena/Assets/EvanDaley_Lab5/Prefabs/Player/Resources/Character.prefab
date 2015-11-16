@@ -45,8 +45,9 @@ GameObject:
   - 33: {fileID: 3353024}
   - 65: {fileID: 6545776}
   - 23: {fileID: 2340962}
-  - 114: {fileID: 11435308}
   - 114: {fileID: 11463478}
+  - 114: {fileID: 11446676}
+  - 114: {fileID: 11402368}
   m_Layer: 0
   m_Name: PlayerBody
   m_TagString: Untagged
@@ -177,10 +178,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 419466}
   - 65: {fileID: 6556082}
-  - 114: {fileID: 11402932}
   - 54: {fileID: 5415004}
   - 114: {fileID: 11422200}
   - 114: {fileID: 11405526}
+  - 114: {fileID: 11477916}
+  - 114: {fileID: 11410532}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -209,7 +211,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 192740}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .5, z: 0}
+  m_LocalPosition: {x: -9.35000038, y: 3.61999989, z: 7.84000015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 402510}
@@ -534,18 +536,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11402932
+--- !u!114 &11402368
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 192740}
+  m_GameObject: {fileID: 108640}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8997206a96b5fbd4b9f074935fa00218, type: 3}
+  m_Script: {fileID: 11500000, guid: 1667cbf11bc6e2a4993e6ab48509dd0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 6
 --- !u!114 &11405526
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -571,6 +572,17 @@ MonoBehaviour:
   viewIdField: 0
   instantiationId: -1
   isRuntimeInstantiated: 0
+--- !u!114 &11410532
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 192740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 249bc726f7ef09d4d956ec6b407427dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11416406
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -619,7 +631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abc1e2c591479d54e8bea70f9bbfcddb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11435308
+--- !u!114 &11446676
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -627,9 +639,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 108640}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1667cbf11bc6e2a4993e6ab48509dd0e, type: 3}
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ownerId: 0
+  group: 0
+  prefixBackup: -1
+  observed: {fileID: 0}
+  synchronization: 1
+  onSerializeTransformOption: 1
+  onSerializeRigidBodyOption: 2
+  ownershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 402510}
+  ObservedComponentsFoldoutOpen: 1
+  viewIdField: 0
+  instantiationId: -1
+  isRuntimeInstantiated: 0
 --- !u!114 &11449370
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -680,6 +706,18 @@ MonoBehaviour:
   viewIdField: 0
   instantiationId: -1
   isRuntimeInstantiated: 0
+--- !u!114 &11477916
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 192740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8997206a96b5fbd4b9f074935fa00218, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 6
 --- !u!114 &11484194
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -691,7 +729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d155b9771cde19345bebd37cdfd9abfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpellPrefab: {fileID: 162228, guid: 65c1b8aeb43d2024abf96e3527dcdc8e, type: 2}
+  isRealPlayer: 1
   spellList:
   - 1
   - Red
@@ -709,7 +747,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: _team
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 192740}

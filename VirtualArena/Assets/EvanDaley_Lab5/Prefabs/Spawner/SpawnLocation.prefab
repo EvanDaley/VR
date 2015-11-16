@@ -32,8 +32,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 407684}
-  - 114: {fileID: 11425044}
   - 136: {fileID: 13618608}
+  - 114: {fileID: 11483784}
   m_Layer: 0
   m_Name: SpawnLocation
   m_TagString: Untagged
@@ -48,7 +48,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 179886}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.2015228, y: 0, z: -43.4392738}
+  m_LocalPosition: {x: -10.9184895, y: -4.52190756e-17, z: 14.8663492}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 444358}
@@ -254,18 +254,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &11425044
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 179886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3701bd5988620144a1946ace4a934a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  team: 1
 --- !u!114 &11483346
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -290,6 +278,19 @@ MonoBehaviour:
   teleportSound: {fileID: 8272092}
   teleportPadSound: {fileID: 8277056}
   teleportPadOn: 1
+--- !u!114 &11483784
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe23a667d86a84c44a9f8c5d02a8af89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: EvilCube
+  interval: 25
 --- !u!136 &13618608
 CapsuleCollider:
   m_ObjectHideFlags: 1

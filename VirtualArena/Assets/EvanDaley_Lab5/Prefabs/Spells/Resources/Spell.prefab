@@ -259,6 +259,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b26ae45b2ab7949bc12f56c1dc0da9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetingIndicatorPrefab: {fileID: 134530, guid: 767b3772f41a45841940d335b83dcbc6,
+    type: 2}
+  attackPrefab: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 2}
 --- !u!135 &13546652
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -2370,7 +2373,15 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: targetingIndicatorPrefab
+      value: 
+      objectReference: {fileID: 134530, guid: 767b3772f41a45841940d335b83dcbc6, type: 2}
+    - target: {fileID: 0}
+      propertyPath: attackPrefab
+      value: 
+      objectReference: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 162228}
