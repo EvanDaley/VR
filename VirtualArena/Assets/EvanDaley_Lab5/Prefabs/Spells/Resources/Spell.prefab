@@ -261,7 +261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetingIndicatorPrefab: {fileID: 134530, guid: 767b3772f41a45841940d335b83dcbc6,
     type: 2}
-  attackPrefab: {fileID: 100000, guid: 389a117d7d1de024d8af55b9d3cb3fe4, type: 2}
+  attackPrefab: {fileID: 185894, guid: 77f07659b04039a429dc32392cbf1b61, type: 2}
   coolOff: 0
   fireRate: .100000001
 --- !u!135 &13546652
@@ -2383,7 +2383,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: attackPrefab
       value: 
-      objectReference: {fileID: 100000, guid: 389a117d7d1de024d8af55b9d3cb3fe4, type: 2}
+      objectReference: {fileID: 185894, guid: 77f07659b04039a429dc32392cbf1b61, type: 2}
     - target: {fileID: 0}
       propertyPath: fireRate
       value: .100000001

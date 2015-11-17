@@ -35,15 +35,13 @@ MonoBehaviour:
   - PunRespawn
   - RequestForPickupTimes
   - TaggedPlayer
+  - AddObject
+  - Cast
+  - Initialize
   - Lower
-  - Raise
   - PowerOff
   - PowerOn
-  - SetTeam
-  - AddObject
+  - Raise
   - SetHand
-  - CreateSpell
-  - Cast
-  - CreateSpellWithID
-  - Initialize
+  - SetTeam
   DisableAutoOpenWizard: 1

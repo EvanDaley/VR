@@ -50,9 +50,12 @@ public class Spell : MonoBehaviour {
 			m_Targeting = m_Transform.root.GetComponent<Targeting> ();
 			m_Transform.position = parentView.transform.position;
 			
-			if (m_Targeting) {
-				targetingIndicatorInstance = GameObject.Instantiate (targetingIndicatorPrefab, m_Transform.position, m_Transform.rotation) as GameObject;
-				print ("Initialize indicator");
+			if (m_Targeting && m_PhotonView.isMine) {
+				if(!targetingIndicatorInstance)
+				{
+					targetingIndicatorInstance = GameObject.Instantiate (targetingIndicatorPrefab, m_Transform.position, m_Transform.rotation) as GameObject;
+					print ("Initialize indicator");
+				}
 			}
 		} else {
 			print ("Could not find parent when creating spell (weapon). Destroying spell.");
@@ -107,8 +110,8 @@ public class Spell : MonoBehaviour {
 
 			Vector3 direction = m_Targeting.TargetPoint - transform.position;
 
-			m_PhotonView.RPC ("Cast", PhotonTargets.All, new object[]{transform.position + transform.forward*2, transform.rotation, direction * 100});
-
+			//m_PhotonView.RPC ("Cast", PhotonTargets.All, new object[]{transform.position + transform.forward*2, transform.rotation, direction * 100});
+			m_PhotonView.RPC ("Cast", PhotonTargets.All, new object[]{m_Targeting.TargetPoint + Vector3.up, transform.rotation, Vector3.zero});
 
 			coolOff = fireRate;
 		}

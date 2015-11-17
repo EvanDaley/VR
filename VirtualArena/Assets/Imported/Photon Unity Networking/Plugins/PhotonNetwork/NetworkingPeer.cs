@@ -641,7 +641,7 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
         // read game properties and cache them locally
         if (this.CurrentGame != null && gameProperties != null)
         {
-            this.CurrentGame.CacheProperties(gameProperties);
+            this.CurrentGame.InternalCacheProperties(gameProperties);
             SendMonoMessage(PhotonNetworkingMessage.OnPhotonCustomRoomPropertiesChanged, gameProperties);
             if (PhotonNetwork.automaticallySyncScene)
             {
@@ -858,7 +858,7 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
     {
         Hashtable newProps = new Hashtable() { { GamePropertyKey.MasterClientId, nextMasterId } };
         Hashtable prevProps = new Hashtable() { { GamePropertyKey.MasterClientId, this.mMasterClientId } };
-        return this.OpSetPropertiesOfRoom(newProps, false, prevProps);
+        return this.OpSetPropertiesOfRoom(newProps, expectedProperties: prevProps, webForward: false);
     }
 
     private Hashtable GetActorPropertiesForActorNr(Hashtable actorProperties, int actorNr)
@@ -1141,7 +1141,11 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
             {
                 Debug.LogError("Operation " + operationResponse.OperationCode + " failed in a server-side plugin. Check the configuration in the Dashboard. Message from server-plugin: " + operationResponse.DebugMessage);
             }
-            else// if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
+            else if (operationResponse.ReturnCode == ErrorCode.NoRandomMatchFound)
+            {
+                Debug.LogWarning("Operation failed: " + operationResponse.ToStringFull());
+            }
+            else
             {
                 Debug.LogError("Operation failed: " + operationResponse.ToStringFull() + " Server: " + this.server);
             }
@@ -2725,8 +2729,6 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
                 continue;
             }
 
-            view.destroyedByPhotonNetwork = true;
-
             // we only destroy/clean PhotonViews that were created by PhotonNetwork.Instantiate (and those have an instantiationId!)
             if (view.instantiationId >= 1)
             {
@@ -2853,6 +2855,7 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
 
     public bool LocalCleanPhotonView(PhotonView view)
     {
+        view.removedFromLocalViewList = true;
         return this.photonViewList.Remove(view.viewID);
     }
 
