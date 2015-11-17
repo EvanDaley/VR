@@ -32,15 +32,15 @@ public class AIMovement : MonoBehaviour {
 
 	void Move()
 	{
-		if(m_AITargeting.target == null)
+		if(m_AITargeting.Target == null)
 			return;
 			
-		float distance = Vector3.Distance (transform.position,m_AITargeting.target.position);
+		float distance = Vector3.Distance (transform.position,m_AITargeting.Target.position);
 		if(distance<stoppingDistance)
 			return;
 
 		// Set the movement vector based on the axis input
-		movement = Vector3.MoveTowards (transform.position,m_AITargeting.target.position,moveSpeed * Time.deltaTime);
+		movement = Vector3.MoveTowards (transform.position,m_AITargeting.Target.position,moveSpeed * Time.deltaTime);
 		
 		// Move the player to its current position plus movement
 		playerRigidBody.MovePosition (movement);

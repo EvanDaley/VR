@@ -17,6 +17,9 @@ public class RightHand : MonoBehaviour {
 		m_Transform = GetComponent<Transform>();
 		m_PhotonView = GetComponent<PhotonView>();
 		SpellIndex = 0;
+
+		if(!isRealPlayer)
+			CreateSpell();
 	}
 
 	void Update()
@@ -24,7 +27,7 @@ public class RightHand : MonoBehaviour {
 		if (!isRealPlayer)
 			return;
 
-		if(m_PhotonView.isMine || (m_PhotonView.isSceneView && PhotonNetwork.isMasterClient) || PhotonNetwork.offlineMode || !PhotonNetwork.connected)
+		if(m_PhotonView.isMine || PhotonNetwork.offlineMode || !PhotonNetwork.connected)
 		{
 				 if(Input.GetKeyDown (KeyCode.Alpha1))	SpellIndex = 0;
 			else if(Input.GetKeyDown (KeyCode.Alpha2))	SpellIndex = 1;

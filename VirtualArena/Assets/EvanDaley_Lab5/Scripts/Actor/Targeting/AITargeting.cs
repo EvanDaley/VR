@@ -1,14 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AITargeting : MonoBehaviour {
+public class AITargeting : MonoBehaviour, ITargeting {
 
-	public Transform target;
+	private Transform target;
 	private Team m_Team;
 	public float updateInterval = 1f;
 	private float cooldown = 0;
 
 	PhotonView m_PhotonView;
+
+	public Vector3 TargetPoint
+	{
+		get{ return target.position; }
+	}
+	
+	public Transform Target
+	{
+		get{ return target; }
+	}
 
 	void Awake()
 	{
@@ -30,7 +40,7 @@ public class AITargeting : MonoBehaviour {
 		}
 	}
 
-	void UpdateTargeting()
+	public void UpdateTargeting()
 	{
 		Team temp;
 		temp = InstanceTracker.Instance.GetClosestTarget (m_Team);

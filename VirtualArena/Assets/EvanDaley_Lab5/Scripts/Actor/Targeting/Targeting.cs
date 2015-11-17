@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Targeting : MonoBehaviour {
+public class Targeting : MonoBehaviour, ITargeting {
 
 	private PhotonView m_PhotonView;
 	private Vector3 targetPoint;
@@ -26,10 +26,10 @@ public class Targeting : MonoBehaviour {
 		if(!m_PhotonView.isMine)
 			return;
 		
-		Look();
+		UpdateTargeting();
 	}
 
-	void Look()
+	public void UpdateTargeting()
 	{
 		// Create a ray from the mouse cursor on screen in the direction of the camera.
 		Ray camRay = Camera.main.ScreenPointToRay (Input.mousePosition);

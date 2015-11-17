@@ -20,11 +20,11 @@ public class SimpleAIRotation : MonoBehaviour {
 
 	void Turning()
 	{
-		if(m_AITargeting.target == null)
+		if(m_AITargeting.Target == null)
 			return;
 
 		// Create a quaternion (rotation) based on looking down the vector from the player to the mouse.
-		Vector3 relativePos = m_AITargeting.target.position - transform.position;
+		Vector3 relativePos = m_AITargeting.Target.position - transform.position;
 
 		Quaternion newRotatation = Quaternion.LookRotation (relativePos);
 		
