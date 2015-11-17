@@ -10,7 +10,7 @@ public class Spell : MonoBehaviour {
 
 	private PhotonView m_PhotonView;
 	private Transform m_Transform;
-	private Targeting m_Targeting;
+	private ITargeting m_Targeting;
 
 	public GameObject targetingIndicatorPrefab;
 	private GameObject targetingIndicatorInstance;
@@ -47,10 +47,10 @@ public class Spell : MonoBehaviour {
 		
 		if (parentView) {
 			m_Transform.SetParent (parentView.transform);
-			m_Targeting = m_Transform.root.GetComponent<Targeting> ();
+			m_Targeting = m_Transform.root.GetComponent<ITargeting> ();
 			m_Transform.position = parentView.transform.position;
 			
-			if (m_Targeting && m_PhotonView.isMine) {
+			if (m_Targeting != null && m_PhotonView.isMine) {
 				if(!targetingIndicatorInstance)
 				{
 					targetingIndicatorInstance = GameObject.Instantiate (targetingIndicatorPrefab, m_Transform.position, m_Transform.rotation) as GameObject;
@@ -110,8 +110,8 @@ public class Spell : MonoBehaviour {
 
 			Vector3 direction = m_Targeting.TargetPoint - transform.position;
 
-			//m_PhotonView.RPC ("Cast", PhotonTargets.All, new object[]{transform.position + transform.forward*2, transform.rotation, direction * 100});
-			m_PhotonView.RPC ("Cast", PhotonTargets.All, new object[]{m_Targeting.TargetPoint + Vector3.up, transform.rotation, Vector3.zero});
+			m_PhotonView.RPC ("Cast", PhotonTargets.All, new object[]{transform.position + transform.forward*2, transform.rotation, direction * 100});
+			//m_PhotonView.RPC ("Cast", PhotonTargets.All, new object[]{m_Targeting.TargetPoint + Vector3.up, transform.rotation, Vector3.zero});
 
 			coolOff = fireRate;
 		}
@@ -145,7 +145,7 @@ public class Spell : MonoBehaviour {
 		{
 			if (targetingIndicatorInstance)
 			{
-				if(m_Targeting)
+				if(m_Targeting != null)
 				{
 					targetingIndicatorInstance.transform.position = m_Targeting.TargetPoint;
 
