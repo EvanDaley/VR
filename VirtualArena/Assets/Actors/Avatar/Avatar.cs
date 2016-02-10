@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Avatar : MonoBehaviour, IKillable, IDamageable<float>
 {
+	public string displayName = "Jonathan";
+
 	// The health of this unit. Use some sort of complicated algorithm for generating health on spawn.
 	private float health = 100;	// TODO: Set based on monster's level.
 
